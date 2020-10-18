@@ -44,3 +44,33 @@ yarn add @types/yup -D
 
 yarn add cors
 yarn add @types/cors -D
+
+
+MOBILE
+
+yarn global bin
+yarn config get prefix
+yarn config set prefix ~/.yarn
+vim .zshrc
+export PATH="$PATH:`yarn global bin`"
+
+yarn global add expo-cli
+
+expo -h
+
+expo init mobile
+
+cd mobile
+
+expo start
+
+expo install react-native-maps
+
+expo install @expo-google-fonts/nunito expo-font
+
+# React Navigation
+yarn add @react-navigation/native
+yarn add @react-navigation/stack
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+expo install expo-image-picker
